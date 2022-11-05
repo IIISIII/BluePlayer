@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BluePlayer</string>
+	<string name="request_permission">Grant Permission</string>
+	<string name="request_permission_description">Allow file read/write permission to use this feature</string>
+    <string name="cancel">Cancel</string>
+	<string name="ok">OK</string>
+	
+	<string name="search_title">Search</string>
+	<string name="search_message">Write title or artist</string>
+	<string name="search_hint"></string>
+	
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="artist_color">#cccccc</color>
+    <color name="background_color">#5ab1df</color>
+    <color name="background_color_alpha">#cc5ab1df</color>
+    <color name="background_color_dark">#59b0de</color>
+    <color name="notification_color">#8ad1ff</color>
+    <color name="title_color">#ffffff</color>
+    <dimen name="menu_icon_size">52dp</dimen>
+    <dimen name="menu_icon_size_land">40dp</dimen>
+    <dimen name="open_menu_size">60dp</dimen>
+    <dimen name="open_menu_size_land">48dp</dimen>
+    <dimen name="player_invisible_padding">5dp</dimen>
+    <dimen name="player_visible_padding">65dp</dimen>
+    <integer name="menu_animation_duration">200</integer>
+    <string name="app_name">BluePlayer</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="request_permission">Grant Permission</string>
+    <string name="request_permission_description">Allow file read/write permission to use this feature</string>
+    <string name="search_hint"/>
+    <string name="search_message">Write title or artist</string>
+    <string name="search_title">Search</string>
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+		<item name="android:actionBarStyle">@style/MyActionBar</item>
+		<item name="android:colorPrimary">@color/background_color</item>
+		<item name="android:colorPrimaryDark">@color/background_color</item>
+		<item name="android:navigationBarColor">@color/background_color_dark</item>
+	</style>
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+		<item name="android:background">@drawable/actionbar_background</item>
+		<item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+		<item name="android:displayOptions">showTitle</item>
+		<item name="android:icon">@android:color/transparent</item>
+	</style>
+    <style name="MyActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">#ffffffff</item>
+	</style>
+</resources>

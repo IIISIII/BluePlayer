@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="background_color">#5ab1df</color>
+	<color name="background_color_alpha">#cc5ab1df</color>
+	<color name="background_color_dark">#59b0de</color>
+	<color name="notification_color">#8ad1ff</color>
+	<color name="title_color">#ffffff</color>
+	<color name="artist_color">#cccccc</color>
+</resources>

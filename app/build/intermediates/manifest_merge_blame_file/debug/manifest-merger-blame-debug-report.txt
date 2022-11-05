@@ -1,0 +1,133 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.lllslll.wallpaper.growfractal"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:55:2-76
+11-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:55:19-74
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:56:2-77
+12-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:56:19-75
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:57:2-73
+13-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:57:19-71
+14
+15    <application
+15-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:5:5-53:19
+16        android:allowBackup="true"
+16-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:6:9-35
+17        android:debuggable="true"
+18        android:icon="@drawable/icon"
+18-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:7:9-38
+19        android:label="@string/app_name"
+19-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:8:9-41
+20        android:resizeableActivity="true"
+20-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:10:3-36
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:9:9-40
+23        <activity
+23-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:11:9-20:20
+24            android:name="com.lllslll.blueplayer_mk2.MainActivity"
+24-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:12:13-41
+25            android:configChanges="orientation|screenSize"
+25-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:14:4-50
+26            android:exported="true"
+26-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:15:4-27
+27            android:label="@string/app_name" >
+27-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:13:13-45
+28            <intent-filter>
+28-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:16:13-19:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:17:17-68
+29-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:17:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:18:17-76
+31-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:18:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity
+34-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:22:3-25:48
+35            android:name="com.lllslll.blueplayer_mk2.PlayerActivity"
+35-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:23:4-34
+36            android:label="@string/app_name"
+36-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:24:4-36
+37            android:parentActivityName="com.lllslll.blueplayer_mk2.MainActivity" />
+37-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:25:4-46
+38
+39        <service
+39-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:27:3-36:13
+40            android:name="com.lllslll.blueplayer_mk2.service.MusicPlayerService"
+40-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:28:4-46
+41            android:exported="false"
+41-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:30:4-28
+42            android:stopWithTask="false" >
+42-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:29:4-32
+43            <intent-filter>
+43-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:31:4-35:29
+44                <action android:name="android.intent.action.MEDIA_BUTTON" />
+44-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:32:17-77
+44-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:32:25-74
+45                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+45-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:33:17-77
+45-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:33:25-74
+46                <action android:name="android.media.browse.MediaBrowserService" />
+46-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:34:17-83
+46-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:34:25-80
+47            </intent-filter>
+48        </service>
+49
+50        <receiver
+50-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:38:3-44:14
+51            android:name="com.lllslll.blueplayer_mk2.receiver.CustomMediaButtonReceiver"
+51-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:39:4-54
+52            android:exported="false" >
+52-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:40:4-28
+53            <intent-filter>
+53-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:41:4-43:20
+54                <action android:name="android.intent.action.MEDIA_BUTTON" />
+54-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:32:17-77
+54-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:32:25-74
+55            </intent-filter>
+56        </receiver>
+57        <receiver
+57-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:46:3-52:20
+58            android:name="android.support.v4.media.session.MediaButtonReceiver"
+58-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:46:13-80
+59            android:exported="false" >
+59-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:47:4-28
+60            <intent-filter>
+60-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:48:13-51:29
+61                <action android:name="android.intent.action.MEDIA_BUTTON" />
+61-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:32:17-77
+61-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:32:25-74
+62                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+62-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:33:17-77
+62-->E:\Android\AndroidStudioProject\BluePlayer_MK2\app\src\main\AndroidManifest.xml:33:25-74
+63            </intent-filter>
+64        </receiver>
+65
+66        <meta-data
+66-->[com.android.support:appcompat-v7:26.1.0] D:\Android\Settings\.gradle\caches\transforms-3\340a3290f7ebee0cf791d94cb8aeb1f9\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:26:9-28:38
+67            android:name="android.support.VERSION"
+67-->[com.android.support:appcompat-v7:26.1.0] D:\Android\Settings\.gradle\caches\transforms-3\340a3290f7ebee0cf791d94cb8aeb1f9\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:27:13-51
+68            android:value="26.1.0" />
+68-->[com.android.support:appcompat-v7:26.1.0] D:\Android\Settings\.gradle\caches\transforms-3\340a3290f7ebee0cf791d94cb8aeb1f9\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:28:13-35
+69        <meta-data
+69-->[android.arch.lifecycle:runtime:1.0.0] D:\Android\Settings\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
+70            android:name="android.arch.lifecycle.VERSION"
+70-->[android.arch.lifecycle:runtime:1.0.0] D:\Android\Settings\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:26:13-58
+71            android:value="27.0.0-SNAPSHOT" />
+71-->[android.arch.lifecycle:runtime:1.0.0] D:\Android\Settings\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:27:13-44
+72    </application>
+73
+74</manifest>

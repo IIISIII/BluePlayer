@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lllslll.blueplayer_mk2" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+		android:resizeableActivity="true">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+			android:configChanges="orientation|screenSize"
+			android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+		
+		<activity
+			android:name=".PlayerActivity"
+			android:label="@string/app_name"
+			android:parentActivityName=".MainActivity"/>
+		
+		<service
+			android:name=".service.MusicPlayerService"
+			android:stopWithTask="false"
+			android:exported="false">
+			<intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+		</service>
+		
+		<receiver
+			android:name=".receiver.CustomMediaButtonReceiver"
+			android:exported="false">
+			<intent-filter>
+				<action android:name="android.intent.action.MEDIA_BUTTON" />
+			</intent-filter>
+		</receiver>
+		
+		<receiver android:name="android.support.v4.media.session.MediaButtonReceiver"
+			android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+        </receiver>
+    </application>
+	
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+		
+</manifest>

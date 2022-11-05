@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Android\\AndroidStudioProject\\BluePlayer_MK2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
+            "map": [
+                {
+                    "source": "E:\\Android\\AndroidStudioProject\\BluePlayer_MK2\\app\\src\\main\\res\\values-ko\\strings.xml",
+                    "from": {
+                        "startLines": "3,4,5,9,8,7",
+                        "startColumns": "4,1,1,1,1,1",
+                        "startOffsets": "56,98,148,340,286,245",
+                        "endColumns": "44,49,94,37,53,40",
+                        "endOffsets": "96,146,241,376,338,284"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,100,153,251,284,341",
+                        "endColumns": "44,52,97,32,56,43",
+                        "endOffsets": "95,148,246,279,336,380"
+                    }
+                }
+            ]
+        }
+    ]
+}

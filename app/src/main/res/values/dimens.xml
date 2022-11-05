@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="player_visible_padding">65dp</dimen>
+	<dimen name="player_invisible_padding">5dp</dimen>
+	
+	<dimen name="open_menu_size">60dp</dimen>
+	<dimen name="open_menu_size_land">48dp</dimen>
+	
+	<dimen name="menu_icon_size">52dp</dimen>
+	<dimen name="menu_icon_size_land">40dp</dimen>
+</resources>

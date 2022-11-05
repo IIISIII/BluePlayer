@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">블루 플레이어</string>
+    <string name="request_permission">권한 요청</string>
+    <string name="request_permission_description">해당 기능을 사용하기 위해서는 파일 읽기/쓰기 권한을 허용해야 합니다</string>
+    <string name="search_hint"/>
+    <string name="search_message">제목이나 아티스트를 입력</string>
+    <string name="search_title">검색</string>
+</resources>
