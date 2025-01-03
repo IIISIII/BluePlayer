@@ -52,8 +52,33 @@ public class MusicFile extends FileData
 	private MusicFile(String path, String title, String artist, FileData parentData)
 	{
 		super(path, title);
-		this.title = title;
-		this.artist = artist;
+
+		if(title == null || artist == null) {
+			MediaMetadataRetriever mtr = new MediaMetadataRetriever();
+			mtr.setDataSource(path);
+
+			if(title == null) {
+				this.title = mtr.extractMetadata(MediaMetadataRetriever.METADATA_KEY_TITLE);
+				if (this.title == null) {
+					File f = new File(path);
+					this.title = f.getName();
+				}
+				if (this.title == null) {
+					this.title = "unknown";
+				}
+			}
+			this.name = this.title;
+
+			if(artist == null) {
+				this.artist = mtr.extractMetadata(MediaMetadataRetriever.METADATA_KEY_ARTIST);
+				if (this.artist == null)
+					this.artist = "unknown";
+			}
+		}
+		else {
+			this.title = title;
+			this.artist = artist;
+		}
 		this.parentData = parentData;
 	}
 	

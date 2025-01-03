@@ -4,9 +4,9 @@ import java.io.*;
 
 public class FileData implements Comparable<FileData>
 {
-	private String path = null;
-	private String name = null;
-	private String parent = null;
+	protected String path = null;
+	protected String name = null;
+	protected String parent = null;
 	
 	public FileData(String path)
 	{
